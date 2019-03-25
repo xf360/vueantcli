@@ -33,7 +33,7 @@ const routers = new Router({
             {
               path: '/dashboard/analysis',
               name: '分析页',
-              component: () => import('@/pages/dashboard/Analysis'),
+              component: () => import('@/demopages/dashboard/Analysis'),
               icon: 'none'
             }
           ]
@@ -47,19 +47,19 @@ const routers = new Router({
             {
               path: '/form/basic',
               name: '基础表单',
-              component: () => import('@/pages/form/BasicForm'),
+              component: () => import('@/demopages/form/BasicForm'),
               icon: 'none'
             },
             {
               path: '/form/step',
               name: '分步表单',
-              component: () => import('@/pages/form/stepForm/StepForm'),
+              component: () => import('@/demopages/form/stepForm/StepForm'),
               icon: 'none'
             },
             {
               path: '/form/advanced',
               name: '高级表单',
-              component: () => import('@/pages/form/advancedForm/AdvancedForm'),
+              component: () => import('@/demopages/form/advancedForm/AdvancedForm'),
               icon: 'none'
             }
           ]
@@ -73,43 +73,43 @@ const routers = new Router({
             {
               path: '/list/query',
               name: '查询表格',
-              component: () => import('@/pages/list/QueryList'),
+              component: () => import('@/demopages/list/QueryList'),
               icon: 'none'
             },
             {
               path: '/list/primary',
               name: '标准列表',
-              component: () => import('@/pages/list/StandardList'),
+              component: () => import('@/demopages/list/StandardList'),
               icon: 'none'
             },
             {
               path: '/list/card',
               name: '卡片列表',
-              component: () => import('@/pages/list/CardList'),
+              component: () => import('@/demopages/list/CardList'),
               icon: 'none'
             },
             {
               path: '/list/search',
               name: '搜索列表',
-              component: () => import('@/pages/list/search/SearchLayout'),
+              component: () => import('@/demopages/list/search/SearchLayout'),
               icon: 'none',
               children: [
                 {
                   path: '/list/search/article',
                   name: '文章',
-                  component: () => import('@/pages/list/search/ArticleList'),
+                  component: () => import('@/demopages/list/search/ArticleList'),
                   icon: 'none'
                 },
                 {
                   path: '/list/search/application',
                   name: '应用',
-                  component: () => import('@/pages/list/search/ApplicationList'),
+                  component: () => import('@/demopages/list/search/ApplicationList'),
                   icon: 'none'
                 },
                 {
                   path: '/list/search/project',
                   name: '项目',
-                  component: () => import('@/pages/list/search/ProjectList'),
+                  component: () => import('@/demopages/list/search/ProjectList'),
                   icon: 'none'
                 }
               ]
@@ -126,13 +126,13 @@ const routers = new Router({
               path: '/detail/basic',
               name: '基础详情页',
               icon: 'none',
-              component: () => import('@/pages/detail/BasicDetail')
+              component: () => import('@/demopages/detail/BasicDetail')
             },
             {
               path: '/detail/advanced',
               name: '高级详情页',
               icon: 'none',
-              component: () => import('@/pages/detail/AdvancedDetail')
+              component: () => import('@/demopages/detail/AdvancedDetail')
             }
           ]
         },
